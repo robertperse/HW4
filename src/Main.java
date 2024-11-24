@@ -31,6 +31,8 @@ public class Main {
             System.out.println("Если возраст человека равен " +age1 +", то ему нужно ходить в университет");
         } if (age1>24) {
             System.out.println("Если возраст человека равен " +age1 +", то ему нужно ходить на работу");
+        } if (age < 2) {
+            System.out.println("Возраст должен быть не менее 2 лет.");
         }
 
         int age2 = 3;
@@ -42,13 +44,13 @@ public class Main {
             System.out.println("Если возраст ребенка равен " + age2 + ", то ему можно кататься на аттракицоне без сопровождения");
         }
 
-        int seat = 0;
-        if (seat>=0 && seat<60){
-            System.out.println("Если в вагоне " +seat +" человек, то еще остались сидячие места");
-        } if (seat>=60 && seat<102) {
-            System.out.println("Если в вагоне " +seat +" человек, то остались только стоячие места");
-        } if (seat==102) {
-            System.out.println("Если в вагоне " +seat +" человек, то вагон переполнен");
+        int passengersInTrain = 0;
+        if (passengersInTrain < 60) {
+            System.out.println("Есть сидячие и стоячие места.");
+        } if (passengersInTrain >= 60 && passengersInTrain < 102) {
+            System.out.println("Есть только стоячие места.");
+        } if (passengersInTrain >= 102) {
+            System.out.println("Вагон полностью забит.");
         }
 
         int one = 1;
