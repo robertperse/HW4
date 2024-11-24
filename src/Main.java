@@ -44,13 +44,15 @@ public class Main {
             System.out.println("Если возраст ребенка равен " + age2 + ", то ему можно кататься на аттракицоне без сопровождения");
         }
 
-        int passengersInTrain = 0;
-        if (passengersInTrain < 60) {
-            System.out.println("Есть сидячие и стоячие места.");
+        int passengersInTrain = 103;
+        if (passengersInTrain >= 0 && passengersInTrain < 60) {
+            System.out.println("Если в вагоне " +passengersInTrain +" человек, то есть сидячие и стоячие места.");
         } if (passengersInTrain >= 60 && passengersInTrain < 102) {
-            System.out.println("Есть только стоячие места.");
-        } if (passengersInTrain >= 102) {
-            System.out.println("Вагон полностью забит.");
+            System.out.println("Если в вагоне " +passengersInTrain +" человек, то есть только стоячие места.");
+        } if (passengersInTrain == 102) {
+            System.out.println("Если в вагоне " +passengersInTrain +" человек, то вагон полностью забит.");
+        } if (passengersInTrain<0 || passengersInTrain>102) {
+            System.out.println("Вместимость вагона расчитана на 102 человека");
         }
 
         int one = 1;
